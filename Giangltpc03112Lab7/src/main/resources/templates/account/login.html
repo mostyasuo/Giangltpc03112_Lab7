@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>LOGIN</h3>
+	<b th:text="${message}"></b> <b th:text="${mes}"></b> 
+	<form th:action="@{/account/login}" method="post">
+		<input name="username" placeholder="Username?" value=""> 
+		<input name="password" placeholder="Password?" value="">
+		<button type="submit">Login</button>
+	</form>
+</body>
+</html>
+
+<!--  + ${param.error} -->
